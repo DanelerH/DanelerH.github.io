@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body background="Background.jpg">
+<head>
+<title>DanelerH</title>
+<style>
+  h1 {font-family:algerian;}
+  h1 {font-size:250%;}
+  h1 {color:red;}
+  h2 {font-family:algerian;}
+  h2 {font-size:150%;}
+  h2 {color:red;}
+  p {color:white;}
+</style>
+</head>
+
+<body>
+  
+  <h1>My Videos</h1>
+  
+  <table style="width:60%">
+  <tr>
+    <td><center><a href="index.html">Home</td>
+    <td><center><a href="My Videos.html">My Videos</td> 
+    <td><center><a href="Contact Me.html">Contact Me</td>
+  </tr>
+</table>
+
+  <br></br>
+  
+
+  <p><button id="demo10" onclick="myFunction('#demo10','#video10','http://www.youtube.com/embed/Welw0DpWZlU')">Show</button> Apology Video</p>
+  
+  <p><iframe id="video10" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo9" onclick="myFunction('#demo9','#video9','http://www.youtube.com/embed/2kmVH0KFOOQ')">Show</button> Replay video 1</p>
+  
+  <p><iframe id="video9" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo8" onclick="myFunction('#demo8','#video8','http://www.youtube.com/embed/XXbGpS5Oo-0')">Show</button> RUM Evogunities vs Dogra Equiste</p>
+  
+  <p><iframe id="video8" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo7" onclick="myFunction('#demo7','#video7','http://www.youtube.com/embed/yKskeorQXpE')">Show</button> Rank 4 Quasar vs Normal Heroes</p>
+  
+  <p><iframe id="video7" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo6" onclick="myFunction('#demo6','#video6','http://www.youtube.com/embed/58-dpFYfYMI')">Show</button> Coincidence = Double Decking?</p>
+  
+  <p><iframe id="video6" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo5" onclick="myFunction('#demo5','#video5','http://www.youtube.com/embed/DRrDRNn-QlQ')">Show</button> Red Eyes vs Strange Deck</p>
+  
+  <p><iframe id="video5" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo4" onclick="myFunction('#demo4','#video4','http://www.youtube.com/embed/45D34oO6otM')">Show</button> Worst Blackwings I have ever faced</p>
+  
+  <p><iframe id="video4" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo3" onclick="myFunction('#demo3','#video3','http://www.youtube.com/embed/GKer1Hgw1HE')">Show</button> Draw your next card, Potter (with Spyro)</p>
+  
+  <p><iframe id="video3" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo2" onclick="myFunction('#demo2','#video2','http://www.youtube.com/embed/Qy9eqgqPwlA')">Show</button> Cyberdark Armed Dragon Heroes vs Umi and Deck Out(?)</p>
+  
+  <p><iframe id="video2" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+  <p><button id="demo1" onclick="myFunction('#demo1','#video1','http://www.youtube.com/embed/6WGYQ9AFIPo')">Show</button> Channel Intro</p>
+  
+  <p><iframe id="video1" class="video" width="480" height="300"  frameborder="0" allowfullscreen></iframe></p>
+  
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+  <script>
+	
+	var buttontext="show";
+	var visible=true;
+	
+	function myFunction(button,video,src) {
+		var visible=$(button).text()!="Show";
+		if(!visible){
+		$(button).text("Hide");
+		}else{
+		$(button).text("Show");
+		}
+		$(video).toggle(!visible);
+		$(video).attr("src",src);
+		visible=!visible;
+	}
+	
+	$(function() {
+	
+	// src="http://www.youtube.com/embed/XXbGpS5Oo-0"
+	// src="http://www.youtube.com/embed/yKskeorQXpE"
+	
+	// <<iframe width="854" height="510" src="//www.youtube.com/embed/58-dpFYfYMI" frameborder="0" allowfullscreen></iframe>
+		// attach event handler to button
+		// save button state
+		// toggle the video when button is pressed
+		// optionally, change button text
+		$(".video").hide();
+	});
+  
+  </script>
+  
+  
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 Open Git Shell
 
+cd 'C:\Users\Daneler Hostcrexcum\Desktop\Other Files\DanelerH Website'
 git add .
 git commit -m "my changes"
 git push origin master
